@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card2"
+    android:padding="14dp"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="14:31:05"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tvSignal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:background="@drawable/bg_pill_up"
+            android:text="UP"
+            android:textColor="@color/up_green"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tvConfidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="76%"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Bullish · Positive momentum"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp"/>
+
+    <LinearLayout
+        android:id="@+id/outcomeRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <TextView android:id="@+id/btnWin" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="WIN" android:textSize="11sp" android:textColor="@color/up_green"
+            android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:background="@drawable/bg_button_outline"/>
+        <TextView android:id="@+id/btnLoss" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="LOSS" android:textSize="11sp" android:textColor="@color/down_red"
+            android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:background="@drawable/bg_button_outline"/>
+        <TextView android:id="@+id/btnNotTraded" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="NOT TRADED" android:textSize="11sp" android:textColor="@color/text_secondary"
+            android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:background="@drawable/bg_button_outline"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOutcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        android:textSize="11sp"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/text_secondary"
+            xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="26dp"
+            android:background="@drawable/bg_card">
+
+            <TextView
+                android:id="@+id/tvBigSignal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UP ↑"
+                android:textColor="@color/up_green"
+                android:textSize="42sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvHorizon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="5 SECOND SIGNAL"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:letterSpacing="0.06"/>
+
+            <TextView
+                android:id="@+id/tvConfBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Confidence: 78%"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="14dp"
+            android:padding="18dp"
+            android:background="@drawable/bg_card2">
+
+            <TextView android:id="@+id/rowStructureLabel" style="@style/RowLabel" android:text="Market Structure"/>
+            <TextView android:id="@+id/tvStructure" style="@style/RowValue" android:text="Bullish"/>
+
+            <TextView android:id="@+id/rowMomentumLabel" style="@style/RowLabel" android:layout_marginTop="12dp" android:text="Momentum"/>
+            <TextView android:id="@+id/tvMomentum" style="@style/RowValue" android:text="Positive"/>
+
+            <TextView android:id="@+id/rowRecentLabel" style="@style/RowLabel" android:layout_marginTop="12dp" android:text="Recent Candles"/>
+            <TextView android:id="@+id/tvRecent" style="@style/RowValue" android:text="Bullish"/>
+
+            <TextView android:id="@+id/rowLevelsLabel" style="@style/RowLabel" android:layout_marginTop="12dp" android:text="Support/Resistance"/>
+            <TextView android:id="@+id/tvLevels" style="@style/RowValue" android:text="Support rejection detected"/>
+
+            <TextView android:id="@+id/rowFactorsLabel" style="@style/RowLabel" android:layout_marginTop="12dp" android:text="Factors considered"/>
+            <TextView android:id="@+id/tvFactors" style="@style/RowValue" android:text="—"/>
+
+            <TextView android:id="@+id/tvWaitReason" style="@style/RowValue"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/wait_gray"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAnalyzeAgain"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="ANALYZE AGAIN"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/disclaimer"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:alpha="0.7"/>
+    </LinearLayout>
+</ScrollView>
